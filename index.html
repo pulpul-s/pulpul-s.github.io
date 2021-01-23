@@ -3,27 +3,45 @@
 
 <head>
     <title>aaaaaaaaaaaaaaaaaaaaaaaaaaa</title>
-    <script src=""></script>
+
     <style>
-        .punainenteksti {
-            color: rgba(255, 0, 0, 0.562);
-        }
-        
-        .meh {
-            color: green;
-        }
+.blink {
+    animation: blink 0.4s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes blinkr {
+    50% {
+        opacity: 0;
+    }
+}
+
+div {
+    width: 252px;
+    height: 202px;
+    background-color: red;
+    animation: blinkr 1.0s linear infinite;
+}
     </style>
 </head>
 
 <body>
 
-    <p class="punainenteksti">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+<div>
+  <marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
+    <marquee behavior="alternate">
 
-    <script>
-        $("p").click(function() {
-            $(this).addClass("meh");
-        })
-    </script>
+      <p class=blink>00B</p>
+     
+    </marquee>
+  </marquee>
+</div>
+
 </body>
 
 </html>
